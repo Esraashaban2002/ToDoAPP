@@ -8,6 +8,7 @@ const toggleBtn = document.getElementById("toggle-mode");
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let currentFilter = "all";
 let draggedItem = null;
+let editingTaskId = null;
 
 const savedTheme = localStorage.getItem("theme");
 
