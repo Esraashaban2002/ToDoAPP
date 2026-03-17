@@ -1,0 +1,83 @@
+body {
+    font-family: "Inria Sans", sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    transition: 0.3s;
+}
+
+.container {
+    width: 420px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+}
+#toggle-mode{
+    font-size: 30px;
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    margin-top: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+.filters button {
+    margin: 5px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.15);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-transform:uppercase ;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+li.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.icons span {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Dark Mode */
+.dark {
+    background: #111;
+}
